@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewTasksActivity">
+
+    <TableLayout android:layout_height="match_parent" android:layout_width="match_parent">
+        <TableRow android:layout_height="match_parent" android:layout_width="match_parent">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="@string/task_name"
+                android:id="@+id/taskNameTextView"/>
+            <EditText
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/taskNamePlainText"
+                android:inputType="text"
+                android:ems="10"/>
+        </TableRow>
+        <TableRow android:layout_height="match_parent" android:layout_width="match_parent">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="@string/task_date"
+                android:id="@+id/taskDateTextView"/>
+            <EditText
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/taskDatePlainText"
+                android:inputType="text"
+                android:ems="10"/>
+        </TableRow>
+        <TableRow android:layout_height="match_parent" android:layout_width="match_parent">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="@string/task_note"
+                android:id="@+id/NoteTextView"/>
+            <EditText
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/taskNotePlainText"
+                android:inputType="text"
+                android:ems="10"/>
+        </TableRow>
+
+        <TableRow android:layout_height="match_parent" android:layout_width="match_parent">
+            <Button
+                android:layout_height="match_parent"
+                android:layout_width="130dp"
+                android:text="@string/create_task"
+                android:id="@+id/CreateButton"/>
+        </TableRow>
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

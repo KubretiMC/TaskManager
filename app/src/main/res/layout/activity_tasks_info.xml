@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TaskInfoActivity">
+
+
+    <TableLayout android:layout_height="match_parent" android:layout_width="match_parent">
+        <TableRow android:layout_height="match_parent" android:layout_width="match_parent">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="130dp"
+                android:text="@string/task_name"
+                android:id="@+id/nameTextView"/>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="90dp"
+                android:text="@string/empty_string"
+                android:id="@+id/taskNameTextView"/>
+        </TableRow>
+        <TableRow android:layout_height="match_parent" android:layout_width="match_parent">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="130dp"
+                android:text="@string/task_date"
+                android:id="@+id/dateTextView"/>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="90dp"
+                android:text="@string/empty_string"
+                android:id="@+id/taskDateTextView"/>
+        </TableRow>
+
+        <TableRow android:layout_height="match_parent" android:layout_width="match_parent">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="130dp"
+                android:text="@string/task_note"
+                android:id="@+id/notesTextView"/>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="@string/empty_string"
+                android:id="@+id/taskNotesTextView"/>
+        </TableRow>
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
